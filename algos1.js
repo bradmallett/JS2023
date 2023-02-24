@@ -69,6 +69,16 @@ function largestOfFour(arr) {
 
 
 
+// Here I refactored it
+  function largestOfFour2(arrays) {
+    return arrays.map(arr => Math.max(...arr));
+    }
+    
+    largestOfFour2([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [-72, -3, -17, -10]]);
+  // returns [ 5, 27, 39, -3 ]
+
+
+
   
 // =========================================================================
 
