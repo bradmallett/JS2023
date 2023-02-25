@@ -22,6 +22,7 @@ function factorialize(num) {
 
 
 
+
 // =========================================================================
 
 // Find the Longest Word in a String
@@ -42,6 +43,9 @@ function findLongestWordLength(str) {
   }
   
   findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+
+
 
 
 
@@ -79,6 +83,9 @@ function largestOfFour(arr) {
 
 
 
+
+
+
   
 // =========================================================================
 
@@ -100,6 +107,9 @@ function confirmEnding(str, target) {
   
   confirmEnding("Bastian", "kdo");
   // returns false
+
+
+
 
 
 
@@ -132,6 +142,9 @@ function repeatStringNumTimes(str, num) {
 
 
 
+
+
+
   // =========================================================================
 
 // Truncate a String
@@ -149,4 +162,43 @@ function truncateString(str, maxStrLength) {
   
   truncateString("A-tisket a-tasket A green and yellow basket", 8)
   // returns 'A-tisket...'
+
+
+
+
+
+
+
+// =========================================================================
+
+
+// Finders Keepers
+// Create a function that looks through an array arr and returns the first element in it that passes a 'truth test'.
+// This means that given an element x, the 'truth test' is passed if func(x) is true.
+// If no element passes the test, return undefined.
+
+function findElement(arr, func) {
+
+  // create loop to iterate through array
+  for(let i = 0; i < arr.length; i ++) {
+
+    // check if func returns true on array item
+    // if true, return array item
+    if(func(arr[i]) === true) return arr[i]
+  }
+
+  // if all array items are false, return undefined
+  return undefined
+}
+
+findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0)
+// returns 8
+
+
+
+
+
+
+
+// =========================================================================
 
