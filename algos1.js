@@ -134,5 +134,19 @@ function repeatStringNumTimes(str, num) {
 
   // =========================================================================
 
+// Truncate a String
+// Truncate a string (first argument) if it is longer than the given maximum string length (second argument).
+// Return the truncated string with a ... ending.
 
+function truncateString(str, maxStrLength) {
+    // check if str is longer than num
+    if(maxStrLength >= str.length) return str
+  
+    // use slice to cut string to correct length
+    return str.slice(0, maxStrLength) + '...'
+    
+  }
+  
+  truncateString("A-tisket a-tasket A green and yellow basket", 8)
+  // returns 'A-tisket...'
 
