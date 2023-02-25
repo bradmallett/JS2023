@@ -106,7 +106,33 @@ function confirmEnding(str, target) {
   
 // =========================================================================
 
+// Repeat a String Repeat a String
+// Repeat a given string str (first argument) for num times (second argument).
+// Return an empty string if num is not a positive number.
+// For the purpose of this challenge, do not use the built-in .repeat() method.
 
+function repeatStringNumTimes(str, num) {
+    // check if num is negative
+    if(num < 0) return ''
+  
+    // create variable to build strings into 
+    let newStr = ''
+      
+    // create loop to concat strings into newStr variable
+    for(let i = 1; i <= num; i++) {
+      newStr += str
+    }
+  
+    return newStr
+  }
+  
+  repeatStringNumTimes("abc", 3)
+  // returns abcabcabc
+
+
+
+
+  // =========================================================================
 
 
 
